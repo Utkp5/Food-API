@@ -8,7 +8,12 @@ function App() {
   
   const Handleclick = async () =>  {
 
-      await axios.get("https://foodish-api.herokuapp.com/api/",{}).then((res) => {console.log(res); setdata(res.data)} ).catch((err) => {console.log(err);})
+      await axios.get("https://foodish-api.herokuapp.com/api/",{}).then((res) => {
+        console.log(res); 
+        setdata(res.data)
+      }).catch((err) => {
+        console.log(err);
+      })
     }
     
 
